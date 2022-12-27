@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title></title>
+</head>
+<body>
+<style>
+  .header-links li span {
+    position: relative;
+    z-index: 0;
+  }
+
+  .header-links li span::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: 2px;
+    left: -4px;
+    right: -4px;
+    display: block;
+    height: 6px;
+  }
+
+  .header-links li.active span::before {
+    background-color: #fcae04;
+  }
+
+  .header-links li:not(.active):hover span::before {
+    background-color: #ccc;
+  }
+</style>
+
+<header class="bg-white shadow-lg h-24 hidden md:flex">
+   <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <a href="file:///C:/Users/purna/Desktop/blockchain/0.%20Websites%20you%20may%20like/newwebsite.html" class="ml-3 text-xl" rel="noopener noreferrer" ><b>Verifi</b></a>
+    </a>
+  <nav class="header-links contents font-semibold text-base lg:text-lg">
+    <ul class="flex items-center ml-4 xl:ml-8 mr-auto">
+      <li class="p-3 xl:p-6 active">
+        <a href="">
+          <span>Register</span>
+        </a>
+      </li>
+      <li class="p-3 xl:p-6">
+        <a href="">
+          <span>About</span>
+        </a>
+      </li>
+      <li class="p-3 xl:p-6">
+        <a href="">
+          <span>Team</span>
+        </a>
+      </li>
+      <li class="p-3 xl:p-6">
+        <a href="">
+          <span>Contact</span>
+        </a>
+      </li>
+      
+      
+    </ul>
+  </nav>
+  
+    <button class="inline-flex items-center bg-blue-500 text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+    	<a href = "file:///C:/Users/purna/Desktop/blockchain/0.%20Websites%20you%20may%20like/Login%20page.html" target="_blank">login </a>
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+</body>
+</html>
